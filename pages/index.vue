@@ -1,0 +1,34 @@
+<template>
+  <header>
+    <Navbar />
+  </header>
+  <main>
+    <section>
+      <div class="bg-[#f9edea] min-h-screen px-32 py-10">
+        <div class="grid grid-cols-3 gap-5">
+          <div class="col-span-2 row-span-2">
+            <img
+              src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="image1"
+              class="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+          <div class="col-span-1">
+            <img
+              src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="image2"
+              class="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+          <div class="col-span-1">
+            <img
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="img3"
+              class="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
