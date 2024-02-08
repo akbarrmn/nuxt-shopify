@@ -9,6 +9,11 @@ export interface User {
   token:     string;
 }
 
+export interface Login {
+  username: string;
+  password: string;
+}
+
 export interface SingleUser {
   id:         number;
   firstName:  string;
