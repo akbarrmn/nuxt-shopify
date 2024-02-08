@@ -33,7 +33,7 @@
           <p
             class="py-2.5 px-3 min-w-fit text-gray-500 bg-gray-100 border border-r-0 rtl:rounded-r-lg rtl:rounded-l-none rtl:border-l-0 rtl:border-r rounded-l-lg"
           >
-            search category
+            Search Category
           </p>
           <input
             type="text"
@@ -95,7 +95,7 @@
       </div>
     </div>
 
-    <div class="w-full py-5 shadow-sm shadow-black/20 flex justify-center gap-4">
+    <div class="w-full py-5 shadow-sm shadow-black/20 flex justify-center gap-6">
       <h1>Deal Today</h1>
       <h1>Special Prices</h1>
       <h1>Finish</h1>
