@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
-import type { SingleUser, User } from '~/utils/types/user.types';
-
+import type { Login, SingleUser, User } from '~/utils/types/user.types';
 
 export const useUserStore = defineStore('user', () => {
   const user = ref();
@@ -10,10 +9,10 @@ export const useUserStore = defineStore('user', () => {
   });
 
   const setToken = (data?: string) => (token.value = data);
-  const setUser = (data?: any) => (user.value = data);
+  const setUser = (data?: SingleUser) => (user.value = data);
 
   // Login user
-  const signIn = async (data: any) => {
+  const signIn = async (data: Login) => {
     try {
       const res = await $fetch<User>("https://dummyjson.com/auth/login", {
         method: "POST",
@@ -41,10 +40,26 @@ export const useUserStore = defineStore('user', () => {
             Authorization: `Bearer ${token.value}`,
           },
         })
+        setUser(res);
       } catch (error) {
         setUser();
         console.log(error)
       }
     }
+  }
+
+  const logoutUser = async () => {
+    setToken();
+    setUser();
+  }
+
+  return {
+    user,
+    token,
+    signIn,
+    fetchUser,
+    logoutUser,
+    setToken,
+    setUser
   }
 })
