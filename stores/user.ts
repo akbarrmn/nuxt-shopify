@@ -2,12 +2,14 @@ import { defineStore } from 'pinia'
 import type { Login, SingleUser, User } from '~/utils/types/user.types';
 
 export const useUserStore = defineStore('user', () => {
+  // create user object and token
   const user = ref();
   const token = useCookie('MY_COOKIE', {
     // Expirated after 1 hour
     maxAge: 60 * 60,
   });
 
+  // Setters
   const setToken = (data?: string) => (token.value = data);
   const setUser = (data?: SingleUser) => (user.value = data);
 

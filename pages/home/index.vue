@@ -50,11 +50,13 @@
 <script setup lang="ts">
 const userStore = useUserStore();
 
+// sign out function to logout
 const signOut = () => {
   userStore.logoutUser();
   useRouter().go(0);
 };
 
+// integrate auth middleware
 definePageMeta({
   middleware: ["auth"],
 })

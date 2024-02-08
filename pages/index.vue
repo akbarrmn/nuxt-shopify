@@ -16,10 +16,12 @@
 <script setup lang="ts">
 const userStore = useUserStore();
 
+// integrate auth middleware
 definePageMeta({
   middleware: ["already-auth"],
 });
 
+// sign in function to login
 const signIn = async () => {
   await userStore.signIn({
     username: "kminchelle",
