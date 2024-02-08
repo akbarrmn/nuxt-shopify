@@ -4,8 +4,8 @@
   </header>
   <main>
     <section>
-      <div class="bg-[#f9edea] min-h-screen px-32 py-10">
-        <div class="grid grid-cols-3 gap-5">
+      <div class="bg-[#f9edea] w-full px-10 py-10">
+        <div class="grid grid-cols-3 gap-5 auto-rows-[250px]">
           <div class="col-span-2 row-span-2">
             <img
               src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
