@@ -15,12 +15,12 @@ export default <Partial<Config>> {
         center: true,
         padding: {
           default: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
-        }
-      }
+          sm: '1rem',
+          lg: '1rem',
+          xl: '1rem',
+          '2xl': '1rem',
+        },
+      },
     }
   },
   plugins: []
