@@ -8,10 +8,12 @@ export const useUserStore = defineStore('user', () => {
     // Expirated after 1 hour
     maxAge: 60 * 60,
   });
+  const err = ref()
 
   // Setters
   const setToken = (data?: string) => (token.value = data);
   const setUser = (data?: SingleUser) => (user.value = data);
+  const setErr = (data?: any) => (err.value = data);
 
   // Login user
   const signIn = async (data: Login) => {
@@ -24,11 +26,10 @@ export const useUserStore = defineStore('user', () => {
       setToken(res.token);
       await fetchUser();
 
-    } catch (error) {
+    } catch (error: any) {
       setToken();
       setUser();
-      console.log(error);
-      
+      setErr(error.response.status)
     }
   }
 
@@ -58,6 +59,7 @@ export const useUserStore = defineStore('user', () => {
   return {
     user,
     token,
+    err,
     signIn,
     fetchUser,
     logoutUser,
