@@ -96,6 +96,27 @@
     </section>
 
     <section>
+      <div class="container mb-20">
+        <div class="flex justify-between w-full pt-10 pb-5">
+          <h1>Select Categories</h1>
+          <p>All Categories</p>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+          <div v-for="i in 4" class="flex flex-col items-center min-h-[300px] gap-3 p-2 border border-gray-500 rounded-md">
+            <img
+              src="https://shorturl.at/gkrI3"
+              alt="image1"
+              class="w-full h-fit object-cover rounded-2xl"
+            />
+            <div>
+              <p class="text-xs">1722 Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="container">
         <div class="my-20 flex flex-col items-center justify-center">
           <h1>Profile</h1>
