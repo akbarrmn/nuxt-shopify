@@ -52,6 +52,8 @@
 </template>
 
 <script setup lang="ts">
+import { type Login } from '~/utils/types/user.types';
+
 const userStore = useUserStore();
 
 // integrate auth middleware
@@ -59,7 +61,7 @@ definePageMeta({
   middleware: ["already-auth"],
 });
 
-const state = reactive({
+const state = reactive<Login> ({
   username: "",
   password: "",
 });
@@ -67,8 +69,8 @@ const state = reactive({
 // sign in function to login
 const signIn = async () => {
   await userStore.signIn({
-    username: state.username,
-    password: state.password,
+    username: 'kminchelle',
+    password: '0lelplR',
   });
 
   await navigateTo("/home", { replace: true });
