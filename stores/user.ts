@@ -9,11 +9,13 @@ export const useUserStore = defineStore('user', () => {
     maxAge: 60 * 60,
   });
   const err = ref()
+  const numbers =ref(1)
 
   // Setters
   const setToken = (data?: string) => (token.value = data);
   const setUser = (data?: SingleUser) => (user.value = data);
   const setErr = (data?: any) => (err.value = data);
+  const incrementNumber = () => numbers.value++
 
   // Login user
   const signIn = async (data: Login) => {
@@ -60,6 +62,8 @@ export const useUserStore = defineStore('user', () => {
     user,
     token,
     err,
+    numbers,
+    incrementNumber,
     signIn,
     fetchUser,
     logoutUser,
