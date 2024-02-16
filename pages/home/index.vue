@@ -2,9 +2,9 @@
   <header>
     <Navbar />
   </header>
-  <main class="pb-96">
+  <main class="pb-4">
     <section class="container">
-      <div class="grid grid-cols-3 auto-rows-[280px] gap-4">
+      <div class="grid grid-cols-3 auto-rows-[260px] gap-4">
         <div class="col-span-2 row-span-2 p-6 bg-[#edebeb] rounded-xl flex flex-col h-full justify-between">
           <div class="flex flex-col gap-3">
             <div class="flex gap-4 items-center">
@@ -14,9 +14,8 @@
                 <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
                 <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
                 <Star fill="black" class="text-black w-5 h-5"/>
-
               </div>
-              <p>100+ Reviews</p>
+              <p>100+ reviews</p>
             </div>
             <h1 class="text-8xl font-bold">Step Into Style Your Ultimate Merch Heaven</h1>
           </div>
@@ -169,15 +168,21 @@
     </section>
 
     <section class="container">
-      <div class="grid grid-cols-3 auto-rows-[300px] gap-4 mt-4">
-        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
-
+      <div class="grid grid-cols-3 auto-rows-[250px] gap-4 mt-4">
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full gap-3 justify-center">
+          <Truck class="w-20 h-20 p-4 rounded-full bg-white"/>
+          <h1 class="font-bold text-xl">Shipping Around the World</h1>
+          <p class="text-sm text-gray-500/60 font-medium">Possibility to get your order delivered</p>
         </div>
-        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
-
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full gap-3 justify-center">
+          <BadgeDollarSign class="w-20 h-20 p-4 rounded-full bg-white"/>
+          <h1 class="font-bold text-xl">Secure Payment</h1>
+          <p class="text-sm text-gray-500/60 font-medium">Rest assured your money is safe and secure</p>
         </div>
-        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
-
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full gap-3 justify-center">
+          <Hourglass class="w-20 h-20 p-4 rounded-full bg-white"/>
+          <h1 class="font-bold text-xl">30 Days Free Returns</h1>
+          <p class="text-sm text-gray-500/60 font-medium">Enjoy 30 days free returns</p>
         </div>
       </div>
     </section>
@@ -185,7 +190,7 @@
 </template>
 
 <script setup lang="ts">
-import { ActivitySquare, Play, Star, StarHalf } from 'lucide-vue-next';
+import { ActivitySquare, BadgeDollarSign, Hourglass, Play, Star, StarHalf, Truck } from 'lucide-vue-next';
 
 const userStore = useUserStore();
 // const numberss = () => computed(() => )
