@@ -2,138 +2,193 @@
   <header>
     <Navbar />
   </header>
-  <main>
-    <section>
-      <div class="bg-[#f9edea] w-full px-10 py-10">
-        <div class="grid grid-cols-3 gap-5 auto-rows-[250px]">
-          <div class="col-span-2 row-span-2">
-            <img
-              src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image1"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
-          <div class="col-span-1">
-            <img
-              src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image2"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
-          <div class="col-span-1">
-            <img
-              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="img3"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+  <main class="pb-96">
+    <section class="container">
+      <div class="grid grid-cols-3 auto-rows-[280px] gap-4">
+        <div class="col-span-2 row-span-2 p-6 bg-[#edebeb] rounded-xl flex flex-col h-full justify-between">
+          <div class="flex flex-col gap-3">
+            <div class="flex gap-4 items-center">
+              <div class="flex gap-1">
+                <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
+                <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
+                <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
+                <Star fill="#FD6E5E" class="text-[#FD6E5E] w-5 h-5"/>
+                <Star fill="black" class="text-black w-5 h-5"/>
 
-    <section>
-      <div class="container mb-20">
-        <div class="flex justify-between w-full pt-10 pb-5">
-          <h1>Select Categories</h1>
-          <p>All Categories</p>
+              </div>
+              <p>100+ Reviews</p>
+            </div>
+            <h1 class="text-8xl font-bold">Step Into Style Your Ultimate Merch Heaven</h1>
+          </div>
+          <div class="flex items-center gap-4">
+            <button class="px-6 py-3 text-sm rounded-full bg-[#0F0F0F] text-white inline-flex items-center justify-center">START YOUR JOURNEY</button>
+            <div class="flex gap-2 items-center">
+              <button class="p-2 rounded-full bg-black flex justify-center items-center">
+                <Play class="text-white"/>
+              </button>
+              <div>
+                <h4>LUXURY PRODUCT</h4>
+                <h4>PROVIDED</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex gap-5 justify-between">
-          <button
-            class="rounded-full py-2 px-5 bg-[#FD6E5E] gap-2 w-fit flex items-center"
+        <div class="row-span-2">
+          <img 
+          src="https://images.unsplash.com/photo-1636718282214-0b4162a154f0?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="products"
+          class="w-full h-full object-cover rounded-xl"
           >
-            <svg
-              class="w-10 h-10 text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.6 3.2a1 1 0 0 0-1.6 1 3.5 3.5 0 0 1-.8 3.6c-.6.8-4 5.6-1 10.7A7.7 7.7 0 0 0 12 22a8 8 0 0 0 7-3.8 7.8 7.8 0 0 0 .6-6.5 8.7 8.7 0 0 0-2.6-4 1 1 0 0 0-1.6.7 10 10 0 0 1-.8 3.4 9.9 9.9 0 0 0-2.2-5.5A14.4 14.4 0 0 0 9 3.5l-.4-.3Z"
-              />
-            </svg>
-            <h1>Fashion & Lifestyle</h1>
-          </button>
-
-          <button class="rounded-full p-2 bg-[#dfdcda] w-fit" v-for="i in 9">
-            <svg
-              class="w-10 h-10 text-black"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14c.6 0 1-.4 1-1V7c0-.6-.4-1-1-1H5a1 1 0 0 0-1 1v12c0 .6.4 1 1 1Zm3-7h0v0h0v0Zm4 0h0v0h0v0Zm4 0h0v0h0v0Zm-8 4h0v0h0v0Zm4 0h0v0h0v0Zm4 0h0v0h0v0Z"
-              />
-            </svg>
-          </button>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container mb-20">
-        <div class="flex justify-between w-full pt-10 pb-5">
-          <h1>Select Categories</h1>
-          <p>All Categories</p>
-        </div>
-        <div class="grid grid-cols-4 gap-4">
-          <div v-for="i in 4" class="flex flex-col gap-3">
-            <img
-              src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image1"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-            <p class="text-sm">Shoes</p>
+    <section class="container">
+      <div class="grid grid-cols-3 auto-rows-[280px] mt-4 gap-4">
+        <div class="p-4 bg-[#E4E5BD] rounded-xl">
+          <div class="flex flex-col justify-between h-full">
+            <div class="flex justify-between">
+              <p class="text-sm font-bold">Nike Air Max Plus</p>
+              <p class="text-sm font-bold">$250</p>
+            </div>
+            <img src="~/assets/images/shoe.png" alt="product" class="object-contain h-[120px]">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2 items-center">
+                <button class="rounded-full border-2 border-black p-2">
+                  <p>38</p>
+                </button>
+                <button class="rounded-full border-2 border-black p-2">
+                  <p>38</p>
+                </button>
+                <button class="rounded-full border-2 border-black p-2">
+                  <p>38</p>
+                </button>
+              </div>
+              <button class="px-6 py-3 text-sm rounded-full bg-[#0F0F0F] text-white inline-flex items-center justify-center">
+                ADD TO CART
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container mb-20">
-        <div class="flex justify-between w-full pt-10 pb-5">
-          <h1>Select Categories</h1>
-          <p>All Categories</p>
+        <div class="p-4 bg-[#F0E1D4] rounded-xl">
+          <div class="flex flex-col justify-between h-full w-full">
+            <div class="flex justify-between">
+              <p class="text-sm font-bold">Charless and Keith</p>
+              <p class="text-sm font-bold">$250</p>
+            </div>
+            <img src="~/assets/images/wallet.png" alt="product" class="object-contain h-[150px]">
+            <div class="flex justify-end items-center">
+              <button class="px-6 py-3 text-sm rounded-full bg-[#0F0F0F] text-white inline-flex items-center justify-center">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="grid grid-cols-4 gap-4">
-          <div v-for="i in 4" class="flex flex-col items-center min-h-[300px] gap-3 p-2 border border-gray-500 rounded-md">
-            <img
-              src="https://shorturl.at/gkrI3"
-              alt="image1"
-              class="w-full h-fit object-cover rounded-2xl"
-            />
-            <div>
-              <p class="text-xs">1722 Reviews</p>
+        <div class="p-4 bg-[#E7E4FB] rounded-xl">
+          <div class="flex flex-col justify-between h-full">
+            <div class="flex justify-between">
+              <p class="text-sm font-bold">Logitech G450</p>
+              <p class="text-sm font-bold">$250</p>
+            </div>
+            <img src="~/assets/images/headphone.png" alt="product" class="object-contain h-[150px]">
+            <div class="flex justify-end items-center">
+              <button class="px-6 py-3 text-sm rounded-full bg-[#0F0F0F] text-white inline-flex items-center justify-center">
+                ADD TO CART
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="my-20 flex flex-col items-center justify-center">
-          <h1>Profile</h1>
-          <button 
-          @click="signOut()"
-          class="px-3 py-2 rounded-md bg-red-500 text-white inline-flex items-center justify-center">
-              Sign Out
-          </button>
+    <section class="container">
+      <div class="p-6 mt-4 bg-[#edebeb] rounded-xl flex flex-col gap-4 justify-center items-center h-[150px]">
+        <p>Join 4.000+ companies already growing</p>
+        <div class="flex items-center gap-10">
+          <div class="flex items-center gap-2">
+            <ActivitySquare />
+            <h1 class="font-extrabold text-2xl">Soundcloud</h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <ActivitySquare />
+            <h1 class="font-extrabold text-2xl">Facebook</h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <ActivitySquare />
+            <h1 class="font-extrabold text-2xl">Instagram</h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <ActivitySquare />
+            <h1 class="font-extrabold text-2xl">Twitter</h1>
+          </div>
         </div>
-        <pre>{{ userStore.user }}</pre>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="flex my-4 justify-between items-center w-full">
+        <h1 class="text-5xl font-extrabold">New Arrivals</h1>
+        <button class="px-6 py-3 text-sm rounded-full bg-[#0F0F0F] text-white inline-flex items-center justify-center">
+          Explore More
+        </button>
+      </div>
+      <div class="grid grid-cols-4 gap-4 auto-rows-[400px]">
+        <div class="p-4 bg-[#edebeb] rounded-xl h-full gap-4 flex flex-col justify-evenly">
+          <img src="~/assets/images/shoes2.png" alt="product">
+          <div class="flex flex-col gap-2">
+            <p class="text-xs text-gray-500/60 font-medium">AIR MAX</p>
+            <p class="text-xl font-bold">Nike Air Max 90</p>
+            <p class="text-xs font-extrabold">$250</p>
+          </div>
+        </div>
+        <div class="p-4 bg-[#edebeb] rounded-xl h-full gap-4 flex flex-col justify-evenly">
+          <img src="~/assets/images/shoes2.png" alt="product">
+          <div class="flex flex-col gap-2">
+            <p class="text-xs text-gray-500/60 font-medium">AIR MAX</p>
+            <p class="text-xl font-bold">Nike Air Max 90</p>
+            <p class="text-xs font-extrabold">$250</p>
+          </div>
+        </div>
+        <div class="p-4 bg-[#edebeb] rounded-xl h-full gap-4 flex flex-col justify-evenly">
+          <img src="~/assets/images/shoes2.png" alt="product">
+          <div class="flex flex-col gap-2">
+            <p class="text-xs text-gray-500/60 font-medium">AIR MAX</p>
+            <p class="text-xl font-bold">Nike Air Max 90</p>
+            <p class="text-xs font-extrabold">$250</p>
+          </div>
+        </div>
+        <div class="p-4 bg-[#edebeb] rounded-xl h-full gap-4 flex flex-col justify-evenly">
+          <img src="~/assets/images/shoes2.png" alt="product">
+          <div class="flex flex-col gap-2">
+            <p class="text-xs text-gray-500/60 font-medium">AIR MAX</p>
+            <p class="text-xl font-bold">Nike Air Max 90</p>
+            <p class="text-xs font-extrabold">$250</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="grid grid-cols-3 auto-rows-[300px] gap-4 mt-4">
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
+
+        </div>
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
+
+        </div>
+        <div class="p-6 bg-[#edebeb] rounded-xl flex flex-col items-center h-full justify-between">
+
+        </div>
       </div>
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
+import { ActivitySquare, Play, Star, StarHalf } from 'lucide-vue-next';
+
 const userStore = useUserStore();
+// const numberss = () => computed(() => )
 
 // sign out function to logout
 const signOut = () => {
