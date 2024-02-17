@@ -186,6 +186,8 @@
         </div>
       </div>
     </section>
+
+    <Footer/>
   </main>
 </template>
 
